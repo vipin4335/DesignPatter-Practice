@@ -1,12 +1,12 @@
-import ObserverDesignPattern.EmailObserver;
-import ObserverDesignPattern.MobileAlertObserver;
-import ObserverDesignPattern.NotificationObserver;
-import ObserverDesignPattern.Observable.IphoneObservableImpl;
-import ObserverDesignPattern.Observable.StockObservable;
-import ObserverDesignPattern.ObservalbeDesignpattern;
+
+import Decoratorpattern.Decorators.Cheese;
+import Decoratorpattern.Items.BasePizza;
+import Decoratorpattern.Items.FarmHouse;
+
 
 public class Main {
     public static void main(String[] args) {
-
+        BasePizza pizza=new Cheese(new Cheese(new FarmHouse()));
+        System.out.println(pizza.cost());
     }
 }
